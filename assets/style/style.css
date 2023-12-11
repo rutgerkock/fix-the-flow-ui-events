@@ -79,3 +79,185 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+
+.move {
+  animation: move1 4s 1;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10vw);
+  }
+  50% {
+    transform: translateX(12vw);
+  }
+  75% {
+    transform: translateX(14vw);
+  }
+  99% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.move2 {
+  animation: move2 1.2s 1;
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(40vh);
+    rotate: 90deg;
+  }
+  100% {
+    transform: translateY(0);
+    rotate: 0deg  ;
+  }
+}
+
+.grow {
+  animation: grow1 1s 1;
+}
+
+@keyframes grow1 {
+  0% {
+    scale: 1;
+  }
+  80% {
+    scale: 40;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.animation {
+  animation: animation1 1.2s 1 forwards;
+}
+
+@keyframes animation1 {
+  0% {
+    transform: translateY(0px);
+    transform: translateX(0px);
+    rotate: 0deg;
+  }
+
+  30% {
+    transform: translate(130px, 200px);
+    rotate: 20deg;
+  }
+
+  100% {
+    transform: translate(130px, 1200px);
+    rotate: -30deg;  
+  }
+}
+
+.animation2 {
+  animation: animation2 1s 1 ease forwards;
+}
+
+@keyframes animation2 {
+  0% {
+    transform: translate(130px, 1200px);
+    rotate: -30deg;  
+  }
+  100% {
+    transform: translate(0px, 0px);
+    rotate: 0deg;  
+  }
+}
+
+.animation3 {
+  animation: animation3 0.4s 1 ease;
+}
+
+@keyframes animation3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(100px, 0px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animation4 {
+  animation: animation4 0.4s 1 ease;
+}
+
+@keyframes animation4 {
+  0% {
+    scale: 0;
+  }
+  75% {
+    scale: 2;
+  }
+  100% {
+    scale: 0;
+  }
+}
+
+.animation5 {
+  animation: animation5 1s 1 ease;
+}
+
+@keyframes animation5 {
+  0% {
+    color: currentColor;
+    font-size: 0rem;
+  }
+  50% {
+    color: pink;
+    font-size: 4rem;
+  }
+  100% {
+    color: currentColor;
+    font-size: 0rem;
+  }
+}
+
+.animation6 {
+  animation: animation6 1s 1 ease;
+  transform-origin: left;
+}
+
+@keyframes animation6 {
+  0% {
+    transform: scaleX(1);
+  }
+  75% {
+    transform: scaleX(4);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.animation7 {
+  animation: animation7 1s 1 ease;
+  transform-origin: left;
+}
+
+@keyframes animation7 {
+  0% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(2000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
