@@ -72,7 +72,7 @@ function jumpHandler10() {
 } 
 
 let interaction11 = document.querySelector('a:nth-of-type(10)')
-interaction11.addEventListener('keydown', jumpHandler11)
+interaction11.addEventListener('keyup', jumpHandler11)
 
 function jumpHandler11(s) {
   interaction11.classList.toggle('animation7')
